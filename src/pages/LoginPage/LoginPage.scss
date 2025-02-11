@@ -1,0 +1,32 @@
+.login-page {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.login-page h2 {
+  color: #333;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-page button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background-color: #45a049;
+}

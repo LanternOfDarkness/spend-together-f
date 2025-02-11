@@ -1,11 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LoginPage from './pages/LoginPage/LoginPage';
 
 const App: React.FC = () => {
-    return <div>
-      <img src={logo} className="App-logo" alt="logo" width={200} />
-      <h1>Hello JSX with TypeScript!</h1></div>;
-
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 };
 
 export default App;
