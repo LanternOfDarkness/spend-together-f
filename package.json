@@ -1,9 +1,9 @@
 {
-  "name": "spend-together",
+  "name": "spend-together-f",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cra-template": "1.2.0",
+    "cra-template-typescript": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
@@ -32,5 +32,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/react-dom": "^19.0.3",
+    "@types/react-svg": "^3.0.0",
+    "@types/testing-library__react": "^10.0.1"
   }
 }
