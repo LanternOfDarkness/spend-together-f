@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/quicksand": "^5.1.1",
+    "@mui/material": "^6.4.5",
     "@nextui-org/react": "^2.6.11",
     "cra-template-typescript": "1.2.0",
     "react": "^19.0.0",
