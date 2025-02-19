@@ -1,16 +1,34 @@
+// src/components/Header/Header.tsx
+
 import React from 'react';
 import { Box, AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import './Header.scss';
 
- const Header: React.FC = () => {
+const Header: React.FC = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>{"Spend Together"}</Typography>
-        <Button color="inherit">Login</Button>
-        <Button color="inherit">Sign Up</Button>
-      </Toolbar>
-    </AppBar>
+    <Box className="header-container">
+      <AppBar className="app-bar">
+        <Toolbar className="toolbar">
+          <Box className="logo-container">
+            <Link to="/" className="link">
+              <Box
+                component="img"
+                src="/assets/logo.ico"
+                alt="Logo"
+                className="logo-image"
+              />
+              <Typography variant="h6" className="logo-text">
+                Spend Together
+              </Typography>
+            </Link>
+          </Box>
+          <Box className="buttons-container">
+            <Button className="button">Login</Button>
+            <Button className="button">Sign Up</Button>
+          </Box>
+        </Toolbar>
+      </AppBar>
     </Box>
   );
 };

@@ -1,4 +1,45 @@
-header {
-  width: 100%;
-  background-color: #88f9c6;
+// src/components/Header/Header.scss 
+
+.header-container {
+  flex-grow: 1;
+}
+
+.app-bar {
+  position: static !important;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  color: inherit;
+  font-size: 1.25rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  color: inherit;
 }
