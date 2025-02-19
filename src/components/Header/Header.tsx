@@ -1,12 +1,20 @@
 // src/components/Header/Header.tsx
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Header.scss';
 
 const Header: React.FC = () => {
-  return (
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+  useEffect(() => {
+    const user = localStorage.getItem('user');
+    setIsLoggedIn(!!user);
+  }, []);
+
+  return (  
     <Box className="header-container">
       <AppBar className="app-bar">
         <Toolbar className="toolbar">
