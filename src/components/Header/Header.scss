@@ -1,0 +1,78 @@
+.header-container {
+  flex-grow: 1;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+.app-bar {
+  position: static !important;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
+  margin-right: 16px;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  color: inherit;
+  font-size: 1.25rem;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-basis: 40%;
+  margin: 0 16px;
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
+  justify-content: flex-end;
+  
+  a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: inherit;
+    
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+.menu-link {
+  width: 100%;
+  color: inherit !important;
+  justify-content: flex-start;
+  
+  &:hover {
+    color: #555 !important;
+  }
+}
