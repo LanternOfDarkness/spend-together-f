@@ -1,4 +1,4 @@
-// src/components/Header/Header.scss 
+// src/components/Header/Header.scss
 
 .header-container {
   flex-grow: 1;
@@ -24,7 +24,6 @@
 }
 
 .logo-text {
-  color: inherit;
   font-size: 1.25rem;
 }
 
@@ -38,8 +37,4 @@
 .buttons-container {
   display: flex;
   align-items: center;
-}
-
-.button {
-  color: inherit;
 }

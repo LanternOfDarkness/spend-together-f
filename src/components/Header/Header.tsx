@@ -24,8 +24,8 @@ const Header: React.FC = () => {
             </Link>
           </Box>
           <Box className="buttons-container">
-            <Button className="button">Login</Button>
-            <Button className="button">Sign Up</Button>
+            <Button color="inherit" sx={{ color: 'black' }}>Login</Button>
+            <Button color="primary" sx={{ ml: 2 }}>Sign Up</Button>
           </Box>
         </Toolbar>
       </AppBar>
