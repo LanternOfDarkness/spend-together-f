@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     // TODO: implement authentication check
-    setIsLoggedIn(true);
+    setIsLoggedIn(false);
   }, []);
 
   const navLinks: NavLink[] = [
